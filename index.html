@@ -11,21 +11,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Built to Last | The Built to Last OS" />
   <meta property="og:description" content="The operating system for high-performing men playing the 10-year game." />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:url" content="https://mholzum.github.io/builttolast/" />
+  <meta property="og:image" content="./og-image.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Built to Last | The Built to Last OS" />
   <meta name="twitter:description" content="The operating system for high-performing men playing the 10-year game." />
-  <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta name="twitter:image" content="./og-image.jpg" />
 
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -35,7 +37,11 @@
             paper: '#f7f4ee',
             bronze: '#b08d57',
             slate: '#20242b',
-            smoke: '#7b7f86'
+            smoke: '#7b7f86',
+
+            atlas: '#2f5fa7',
+            atlasDark: '#234a84',
+            atlasLight: '#e8eef8'
           },
           boxShadow: {
             soft: '0 12px 40px rgba(0,0,0,0.10)'
@@ -47,342 +53,348 @@
       }
     }
   </script>
+
   <style>
+
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    /* subtle premium gradient */
+
+    .hero-gradient {
+      background:
+      radial-gradient(circle at 15% 20%, rgba(47,95,167,0.18), transparent 35%),
+      radial-gradient(circle at 85% 80%, rgba(176,141,87,0.18), transparent 35%),
+      radial-gradient(circle at 50% 0%, rgba(0,0,0,0.05), transparent 40%);
+    }
+
     .glass {
       backdrop-filter: blur(10px);
-      background: rgba(255,255,255,0.78);
+      background: rgba(255,255,255,0.8);
     }
+
   </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Built to Last",
-    "url": "https://yourdomain.com/",
-    "logo": "https://yourdomain.com/favicon.png",
-    "description": "The operating system for high-performing men playing the 10-year game."
-  }
-  </script>
 </head>
+
 <body class="bg-paper text-ink antialiased">
+
+  <!-- NAV -->
+
   <header class="sticky top-0 z-50 border-b border-black/5 glass">
+
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+
       <a href="#top" class="flex items-center gap-3">
+
         <div class="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white shadow-soft">
           <span class="text-sm font-semibold tracking-[0.25em]">BTL</span>
         </div>
+
         <div>
           <p class="text-sm font-semibold uppercase tracking-[0.28em] text-smoke">Built to Last</p>
           <p class="text-xs text-smoke">The Built to Last OS</p>
         </div>
+
       </a>
 
       <nav class="hidden items-center gap-8 text-sm md:flex">
-        <a href="#podcast" class="transition hover:text-bronze">Podcast</a>
-        <a href="#os" class="transition hover:text-bronze">The OS</a>
-        <a href="#newsletter" class="transition hover:text-bronze">Newsletter</a>
-        <a href="#community" class="transition hover:text-bronze">Community</a>
+
+        <a href="#podcast" class="transition hover:text-atlas">Podcast</a>
+        <a href="#os" class="transition hover:text-atlas">The OS</a>
+        <a href="#newsletter" class="transition hover:text-atlas">Newsletter</a>
+        <a href="#community" class="transition hover:text-atlas">Community</a>
+
       </nav>
 
-      <a href="#newsletter" class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper transition hover:opacity-90">
+      <a href="#newsletter" class="rounded-full bg-atlas px-5 py-2.5 text-sm font-medium text-white hover:bg-atlasDark transition">
         Join the Briefing
       </a>
+
     </div>
+
   </header>
 
-  <section id="top" class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(176,141,87,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(0,0,0,0.06),transparent_25%)]"></div>
+
+  <!-- HERO -->
+
+  <section id="top" class="hero-gradient relative overflow-hidden">
+
     <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
+
       <div>
+
         <p class="mb-5 inline-flex rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-smoke shadow-soft">
           Podcast • Newsletter • Systems • Community
         </p>
+
         <h1 class="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
           The operating system for high-performing men playing the 10-year game.
         </h1>
+
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate md:text-xl">
           Built to Last helps leaders build strength, energy, discipline, and longevity through systems that compound — not short-term fixes that burn them out.
         </p>
 
         <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-          <a href="#newsletter" class="rounded-full bg-ink px-6 py-3 text-center text-sm font-medium text-paper transition hover:opacity-90">
+
+          <a href="#newsletter" class="rounded-full bg-atlas px-6 py-3 text-center text-sm font-medium text-white hover:bg-atlasDark transition">
             Join the Built to Last Briefing
           </a>
-          <a href="#podcast" class="rounded-full border border-ink/10 bg-white px-6 py-3 text-center text-sm font-medium transition hover:border-ink/20 hover:bg-white/80">
+
+          <a href="#podcast" class="rounded-full border border-ink/10 bg-white px-6 py-3 text-center text-sm font-medium transition hover:border-atlas hover:bg-white/80">
             Explore Episodes
           </a>
+
         </div>
 
         <div class="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
+
           <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
             <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
             <p class="mt-2 text-lg font-semibold">Longevity</p>
           </div>
+
           <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
             <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
             <p class="mt-2 text-lg font-semibold">Discipline</p>
           </div>
+
           <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
             <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
             <p class="mt-2 text-lg font-semibold">Systems</p>
           </div>
+
         </div>
+
       </div>
 
+
+      <!-- SIDE PANEL -->
+
       <div class="rounded-[2rem] border border-ink/8 bg-white p-6 shadow-soft lg:p-8">
+
         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Built to Last Thesis</p>
+
         <h2 class="mt-4 text-2xl font-semibold leading-tight md:text-3xl">
           Most leaders optimize quarterly performance. We optimize decade-long durability.
         </h2>
+
         <p class="mt-4 text-base leading-7 text-slate">
           The Built to Last OS is a framework for men who want to lead, create, and perform at a high level without sacrificing the body, energy, or habits that sustain it.
         </p>
 
-        <div class="mt-8 space-y-4">
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-sm font-medium">Podcast</p>
-            <p class="mt-1 text-sm text-slate">Conversations and frameworks for long-horizon performance.</p>
-          </div>
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-sm font-medium">Newsletter</p>
-            <p class="mt-1 text-sm text-slate">Tactical briefings on systems, energy, health, and discipline.</p>
-          </div>
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-sm font-medium">Community</p>
-            <p class="mt-1 text-sm text-slate">A lower-fulfillment recurring layer for accountability and implementation.</p>
-          </div>
-        </div>
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- PODCAST -->
+
   <section id="podcast" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+
     <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Podcast</p>
         <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Latest episode</h2>
       </div>
-      <a href="#episodes" class="text-sm font-medium text-slate underline-offset-4 transition hover:text-bronze hover:underline">
-        See all episodes
-      </a>
+
     </div>
 
+
     <div class="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+
+
       <div class="overflow-hidden rounded-[2rem] border border-ink/8 bg-white shadow-soft">
+
         <div class="aspect-video w-full bg-slate/95">
+
           <iframe
             class="h-full w-full"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
             title="Built to Last latest episode"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
           </iframe>
+
         </div>
+
       </div>
 
+
       <div class="rounded-[2rem] border border-ink/8 bg-white p-8 shadow-soft">
+
         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Featured conversation</p>
+
         <h3 class="mt-4 text-2xl font-semibold leading-tight">
           Replace this with your current episode title
         </h3>
-        <p class="mt-4 leading-7 text-slate">
-          Use this space for a 2–4 sentence description of the episode. Focus on the tension, the insight, and why a high-performing man should care enough to listen.
-        </p>
 
-        <div class="mt-8 grid gap-4 sm:grid-cols-3">
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Topic</p>
-            <p class="mt-2 font-medium">Energy</p>
-          </div>
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Topic</p>
-            <p class="mt-2 font-medium">Longevity</p>
-          </div>
-          <div class="rounded-2xl bg-paper p-4">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Topic</p>
-            <p class="mt-2 font-medium">Discipline</p>
-          </div>
-        </div>
+        <p class="mt-4 leading-7 text-slate">
+          Add a strong 2–3 sentence hook explaining why this conversation matters for ambitious men.
+        </p>
 
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#newsletter" class="rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:opacity-90">Get new episodes by email</a>
-          <a href="#episodes" class="rounded-full border border-ink/10 px-5 py-3 text-sm font-medium transition hover:border-ink/20">Browse archive</a>
+
+          <a href="#newsletter" class="rounded-full bg-atlas px-5 py-3 text-sm font-medium text-white hover:bg-atlasDark transition">
+            Get new episodes by email
+          </a>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
+  <!-- OS SECTION -->
 
   <section id="os" class="border-y border-black/5 bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+
       <div class="max-w-3xl">
+
         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">The Built to Last OS</p>
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">A framework for men who want sustainable performance, not short-term heroics.</h2>
+
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+          A framework for men who want sustainable performance.
+        </h2>
+
         <p class="mt-5 text-lg leading-8 text-slate">
-          The Built to Last OS helps ambitious men develop a long-horizon system for health, work capacity, leadership, and self-command. It is not another motivation hit. It is a way to structure a life that can carry weight for a decade and beyond.
+          The Built to Last OS helps ambitious men develop a long-horizon system for health, work capacity, leadership, and discipline.
         </p>
+
       </div>
+
 
       <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+
         <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">01</p>
-          <h3 class="mt-3 text-xl font-semibold">Strength</h3>
-          <p class="mt-3 leading-7 text-slate">Build a body that can support ambition, stress, and a meaningful life.</p>
+          <h3 class="text-xl font-semibold">Strength</h3>
         </div>
+
         <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">02</p>
-          <h3 class="mt-3 text-xl font-semibold">Energy</h3>
-          <p class="mt-3 leading-7 text-slate">Protect sleep, recovery, and rhythms so output does not come at the cost of collapse.</p>
+          <h3 class="text-xl font-semibold">Energy</h3>
         </div>
+
         <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">03</p>
-          <h3 class="mt-3 text-xl font-semibold">Discipline</h3>
-          <p class="mt-3 leading-7 text-slate">Create systems that make consistency easier than chaos.</p>
+          <h3 class="text-xl font-semibold">Discipline</h3>
         </div>
+
         <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">04</p>
-          <h3 class="mt-3 text-xl font-semibold">Longevity</h3>
-          <p class="mt-3 leading-7 text-slate">Operate with a 10-year horizon instead of optimizing for the next quarter only.</p>
+          <h3 class="text-xl font-semibold">Longevity</h3>
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- NEWSLETTER -->
+
   <section id="newsletter" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-    <div class="grid gap-8 rounded-[2rem] border border-ink/8 bg-ink p-8 text-paper shadow-soft lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
+
+    <div class="grid gap-8 rounded-[2rem] border border-ink/8 bg-ink p-8 text-white shadow-soft lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
+
       <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-paper/60">Newsletter</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">Join the Built to Last Briefing</h2>
-        <p class="mt-4 max-w-xl text-base leading-7 text-paper/75">
-          A tactical dispatch for high-performing men who want systems for strength, energy, leadership, and long-term durability.
+
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Newsletter</p>
+
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+          Join the Built to Last Briefing
+        </h2>
+
+        <p class="mt-4 max-w-xl text-base leading-7 text-white/75">
+          Weekly systems for strength, energy, leadership, and longevity.
         </p>
-        <ul class="mt-6 space-y-3 text-sm text-paper/80">
-          <li>• New episodes and key takeaways</li>
-          <li>• Weekly frameworks and practices</li>
-          <li>• Early access to community and higher-tier offers</li>
-        </ul>
+
       </div>
 
-      <div class="rounded-[1.5rem] bg-paper p-6 text-ink md:p-8">
-        <p class="text-sm font-medium">Deployable email setup</p>
-        <p class="mt-2 text-sm leading-6 text-slate">
-          Replace the form action below with your Beehiiv subscribe page, Formspree endpoint, or ConvertKit form handler. Until then, the form is visually ready but needs your real endpoint.
-        </p>
+
+      <div class="rounded-[1.5rem] bg-white p-6 text-ink md:p-8">
 
         <form class="mt-6 grid gap-4 sm:grid-cols-[1fr_auto]" action="https://example.com/subscribe" method="POST">
-          <label class="sr-only" for="email">Email address</label>
+
           <input
-            id="email"
             name="email"
             type="email"
             placeholder="Enter your email"
-            class="w-full rounded-full border border-ink/10 bg-white px-5 py-3 outline-none placeholder:text-slate focus:border-ink/20"
+            class="w-full rounded-full border border-ink/10 bg-white px-5 py-3 outline-none"
             required
           />
+
           <button
             type="submit"
-            class="rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition hover:opacity-90"
+            class="rounded-full bg-atlas px-6 py-3 text-sm font-medium text-white hover:bg-atlasDark transition"
           >
             Subscribe
           </button>
+
         </form>
 
-        <p class="mt-4 text-xs text-slate">No fluff. No spam. Just systems that hold up under real life.</p>
       </div>
+
     </div>
+
   </section>
 
-  <section id="episodes" class="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
-    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Archive</p>
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Recent episodes</h2>
-      </div>
-      <p class="max-w-xl text-sm leading-6 text-slate">
-        For SEO, each of these cards should eventually link to its own dedicated page with an embed, summary, transcript, and key takeaways.
-      </p>
-    </div>
 
-    <div class="mt-8 grid gap-6 lg:grid-cols-3">
-      <article class="rounded-[2rem] border border-ink/8 bg-white p-6 shadow-soft">
-        <p class="text-xs uppercase tracking-[0.25em] text-smoke">Episode 001</p>
-        <h3 class="mt-3 text-xl font-semibold">Replace with episode title</h3>
-        <p class="mt-3 text-sm leading-6 text-slate">A short summary of the episode goes here. Keep it tight and useful.</p>
-        <div class="mt-6 flex gap-3">
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Listen</a>
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Read transcript</a>
-        </div>
-      </article>
-
-      <article class="rounded-[2rem] border border-ink/8 bg-white p-6 shadow-soft">
-        <p class="text-xs uppercase tracking-[0.25em] text-smoke">Episode 002</p>
-        <h3 class="mt-3 text-xl font-semibold">Replace with episode title</h3>
-        <p class="mt-3 text-sm leading-6 text-slate">A short summary of the episode goes here. Keep it tight and useful.</p>
-        <div class="mt-6 flex gap-3">
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Listen</a>
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Read transcript</a>
-        </div>
-      </article>
-
-      <article class="rounded-[2rem] border border-ink/8 bg-white p-6 shadow-soft">
-        <p class="text-xs uppercase tracking-[0.25em] text-smoke">Episode 003</p>
-        <h3 class="mt-3 text-xl font-semibold">Replace with episode title</h3>
-        <p class="mt-3 text-sm leading-6 text-slate">A short summary of the episode goes here. Keep it tight and useful.</p>
-        <div class="mt-6 flex gap-3">
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Listen</a>
-          <a href="#" class="text-sm font-medium underline underline-offset-4">Read transcript</a>
-        </div>
-      </article>
-    </div>
-  </section>
+  <!-- COMMUNITY -->
 
   <section id="community" class="border-y border-black/5 bg-white">
+
     <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+
       <div class="max-w-3xl">
+
         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Community</p>
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">The recurring revenue layer comes next.</h2>
+
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+          The Built to Last Society
+        </h2>
+
         <p class="mt-5 text-lg leading-8 text-slate">
-          Built to Last is designed to scale beyond client fulfillment. The future model is media at the top, community in the middle, and premium access at the top end.
+          A future community layer for leaders implementing the Built to Last OS together.
         </p>
+
       </div>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-3">
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">Free</p>
-          <h3 class="mt-3 text-2xl font-semibold">Podcast + Briefing</h3>
-          <p class="mt-3 leading-7 text-slate">The top of funnel: insight, trust, and intellectual buy-in.</p>
-        </div>
-        <div class="rounded-[2rem] border border-bronze/30 bg-ink p-6 text-paper shadow-soft">
-          <p class="text-xs uppercase tracking-[0.25em] text-paper/60">Coming Soon</p>
-          <h3 class="mt-3 text-2xl font-semibold">Built to Last Society</h3>
-          <p class="mt-3 leading-7 text-paper/75">A lower-fulfillment membership for implementation, accountability, and live calls.</p>
-        </div>
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <p class="text-xs uppercase tracking-[0.25em] text-smoke">Premium</p>
-          <h3 class="mt-3 text-2xl font-semibold">Inner Circle</h3>
-          <p class="mt-3 leading-7 text-slate">Private, higher-touch access for men who want more proximity and support.</p>
-        </div>
-      </div>
     </div>
+
   </section>
 
+
+  <!-- FOOTER -->
+
   <footer class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+
     <div class="flex flex-col gap-4 border-t border-black/5 pt-8 md:flex-row md:items-center md:justify-between">
+
       <div>
+
         <p class="text-sm font-semibold uppercase tracking-[0.25em] text-smoke">Built to Last</p>
-        <p class="mt-2 text-sm text-slate">The operating system for high-performing men playing the 10-year game.</p>
+
+        <p class="mt-2 text-sm text-slate">
+          The operating system for high-performing men playing the 10-year game.
+        </p>
+
       </div>
-      <div class="flex flex-wrap gap-6 text-sm text-slate">
-        <a href="#podcast" class="transition hover:text-bronze">Podcast</a>
-        <a href="#os" class="transition hover:text-bronze">The OS</a>
-        <a href="#newsletter" class="transition hover:text-bronze">Newsletter</a>
-        <a href="#community" class="transition hover:text-bronze">Community</a>
-      </div>
+
     </div>
+
   </footer>
+
 </body>
 </html>
