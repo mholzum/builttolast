@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Built to Last | The Built to Last OS</title>
-  <meta name="description" content="Built to Last is the operating system for high-performing men playing the 10-year game — podcast, newsletter, and systems for strength, energy, discipline, and longevity." />
-  <meta name="theme-color" content="#0b0b0c" />
+  <title>Built to Last | The Executive Health Podcast</title>
+  <meta name="description" content="Built to Last is the executive health podcast for leaders building strength, energy, and resilience for the next decade. Watch on YouTube, subscribe on Substack, join the Skool waitlist, and work with Chris Patterson or Mark Holzum." />
+  <meta name="theme-color" content="#f7f4ee" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Built to Last | The Built to Last OS" />
-  <meta property="og:description" content="The operating system for high-performing men playing the 10-year game." />
+  <meta property="og:title" content="Built to Last | The Executive Health Podcast" />
+  <meta property="og:description" content="Watch the podcast, subscribe to the briefing, and explore the Built to Last OS." />
   <meta property="og:url" content="https://mholzum.github.io/builttolast/" />
-  <meta property="og:image" content="./og-image.jpg" />
+  <meta property="og:image" content="./og-imageb2l.jpg" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Built to Last | The Built to Last OS" />
-  <meta name="twitter:description" content="The operating system for high-performing men playing the 10-year game." />
-  <meta name="twitter:image" content="./og-image.jpg" />
+  <meta name="twitter:title" content="Built to Last | The Executive Health Podcast" />
+  <meta name="twitter:description" content="Watch the podcast, subscribe to the briefing, and explore the Built to Last OS." />
+  <meta name="twitter:image" content="./og-imageb2l.jpg" />
 
   <link rel="icon" type="image/png" href="./favicon.png" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script>
     tailwind.config = {
       theme: {
@@ -38,363 +33,111 @@
             bronze: '#b08d57',
             slate: '#20242b',
             smoke: '#7b7f86',
-
             atlas: '#2f5fa7',
             atlasDark: '#234a84',
             atlasLight: '#e8eef8'
           },
           boxShadow: {
-            soft: '0 12px 40px rgba(0,0,0,0.10)'
+            soft: '0 12px 40px rgba(0,0,0,0.10)',
+            panel: '0 20px 60px rgba(0,0,0,0.08)'
           },
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif']
           }
         }
       }
     }
   </script>
-
   <style>
-
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    }
-
-    /* subtle premium gradient */
-
-    .hero-gradient {
+    body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+    .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.82); }
+    .hero-grid {
       background:
-      radial-gradient(circle at 15% 20%, rgba(47,95,167,0.18), transparent 35%),
-      radial-gradient(circle at 85% 80%, rgba(176,141,87,0.18), transparent 35%),
-      radial-gradient(circle at 50% 0%, rgba(0,0,0,0.05), transparent 40%);
+        radial-gradient(circle at 12% 18%, rgba(47,95,167,0.12), transparent 32%),
+        radial-gradient(circle at 88% 82%, rgba(176,141,87,0.12), transparent 28%),
+        linear-gradient(to right, rgba(11,11,12,0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(11,11,12,0.035) 1px, transparent 1px);
+      background-size: auto, auto, 64px 64px, 64px 64px;
     }
-
-    .glass {
-      backdrop-filter: blur(10px);
-      background: rgba(255,255,255,0.8);
+    .section-grid {
+      background:
+        linear-gradient(to right, rgba(11,11,12,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(11,11,12,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
     }
-
   </style>
-
 </head>
-
 <body class="bg-paper text-ink antialiased">
 
-  <!-- NAV -->
-
   <header class="sticky top-0 z-50 border-b border-black/5 glass">
-
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-
       <a href="#top" class="flex items-center gap-3">
-
         <div class="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white shadow-soft">
           <span class="text-sm font-semibold tracking-[0.25em]">BTL</span>
         </div>
-
         <div>
           <p class="text-sm font-semibold uppercase tracking-[0.28em] text-smoke">Built to Last</p>
-          <p class="text-xs text-smoke">The Built to Last OS</p>
+          <p class="text-xs text-smoke">Executive Health Podcast</p>
         </div>
-
       </a>
 
       <nav class="hidden items-center gap-8 text-sm md:flex">
-
         <a href="#podcast" class="transition hover:text-atlas">Podcast</a>
         <a href="#os" class="transition hover:text-atlas">The OS</a>
-        <a href="#newsletter" class="transition hover:text-atlas">Newsletter</a>
-        <a href="#community" class="transition hover:text-atlas">Community</a>
-
+        <a href="#briefing" class="transition hover:text-atlas">Briefing</a>
+        <a href="#offers" class="transition hover:text-atlas">Work With Us</a>
       </nav>
 
-      <a href="#newsletter" class="rounded-full bg-atlas px-5 py-2.5 text-sm font-medium text-white hover:bg-atlasDark transition">
+      <a href="https://builttolastpodcast.substack.com/" target="_blank" rel="noopener noreferrer" class="rounded-full bg-atlas px-5 py-2.5 text-sm font-medium text-white transition hover:bg-atlasDark">
         Join the Briefing
       </a>
-
     </div>
-
   </header>
 
-
-  <!-- HERO -->
-
-  <section id="top" class="hero-gradient relative overflow-hidden">
-
-    <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
-
+  <section id="top" class="hero-grid relative overflow-hidden border-b border-black/5">
+    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
       <div>
-
         <p class="mb-5 inline-flex rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-smoke shadow-soft">
-          Podcast • Newsletter • Systems • Community
+          Podcast • YouTube • Substack • Skool Soon
         </p>
 
         <h1 class="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
-          The operating system for high-performing men playing the 10-year game.
+          The operating system for leaders playing the 10-year game.
         </h1>
 
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate md:text-xl">
-          Built to Last helps leaders build strength, energy, discipline, and longevity through systems that compound — not short-term fixes that burn them out.
+          Built to Last is the executive health podcast for leaders building strength, energy, and resilience for the next decade — through systems that compound, not short-term fixes that burn them out.
         </p>
 
         <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-
-          <a href="#newsletter" class="rounded-full bg-atlas px-6 py-3 text-center text-sm font-medium text-white hover:bg-atlasDark transition">
-            Join the Built to Last Briefing
+          <a href="https://builttolastpodcast.substack.com/" target="_blank" rel="noopener noreferrer" class="rounded-full bg-atlas px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-atlasDark">
+            Join the Waitlist
           </a>
-
-          <a href="#podcast" class="rounded-full border border-ink/10 bg-white px-6 py-3 text-center text-sm font-medium transition hover:border-atlas hover:bg-white/80">
-            Explore Episodes
+          <a href="https://www.youtube.com/@TheBuiltToLastPod" target="_blank" rel="noopener noreferrer" class="rounded-full border border-ink/10 bg-white px-6 py-3 text-center text-sm font-medium transition hover:border-atlas hover:bg-white/80">
+            Visit YouTube
           </a>
-
         </div>
-
-        <div class="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
-
-          <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
-            <p class="mt-2 text-lg font-semibold">Longevity</p>
-          </div>
-
-          <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
-            <p class="mt-2 text-lg font-semibold">Discipline</p>
-          </div>
-
-          <div class="rounded-3xl border border-ink/8 bg-white p-5 shadow-soft">
-            <p class="text-xs uppercase tracking-[0.25em] text-smoke">Core Lens</p>
-            <p class="mt-2 text-lg font-semibold">Systems</p>
-          </div>
-
-        </div>
-
       </div>
-
-
-      <!-- SIDE PANEL -->
-
-      <div class="rounded-[2rem] border border-ink/8 bg-white p-6 shadow-soft lg:p-8">
-
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Built to Last Thesis</p>
-
-        <h2 class="mt-4 text-2xl font-semibold leading-tight md:text-3xl">
-          Most leaders optimize quarterly performance. We optimize decade-long durability.
-        </h2>
-
-        <p class="mt-4 text-base leading-7 text-slate">
-          The Built to Last OS is a framework for men who want to lead, create, and perform at a high level without sacrificing the body, energy, or habits that sustain it.
-        </p>
-
-      </div>
-
     </div>
-
   </section>
-
-
-  <!-- PODCAST -->
-
-  <section id="podcast" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Podcast</p>
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Latest episode</h2>
-      </div>
-
-    </div>
-
-
-    <div class="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-
-
-      <div class="overflow-hidden rounded-[2rem] border border-ink/8 bg-white shadow-soft">
-
-        <div class="aspect-video w-full bg-slate/95">
-
-          <iframe
-            class="h-full w-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Built to Last latest episode"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-
-        </div>
-
-      </div>
-
-
-      <div class="rounded-[2rem] border border-ink/8 bg-white p-8 shadow-soft">
-
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Featured conversation</p>
-
-        <h3 class="mt-4 text-2xl font-semibold leading-tight">
-          Replace this with your current episode title
-        </h3>
-
-        <p class="mt-4 leading-7 text-slate">
-          Add a strong 2–3 sentence hook explaining why this conversation matters for ambitious men.
-        </p>
-
-        <div class="mt-8 flex flex-wrap gap-4">
-
-          <a href="#newsletter" class="rounded-full bg-atlas px-5 py-3 text-sm font-medium text-white hover:bg-atlasDark transition">
-            Get new episodes by email
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- OS SECTION -->
-
-  <section id="os" class="border-y border-black/5 bg-white">
-
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-      <div class="max-w-3xl">
-
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">The Built to Last OS</p>
-
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-          A framework for men who want sustainable performance.
-        </h2>
-
-        <p class="mt-5 text-lg leading-8 text-slate">
-          The Built to Last OS helps ambitious men develop a long-horizon system for health, work capacity, leadership, and discipline.
-        </p>
-
-      </div>
-
-
-      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <h3 class="text-xl font-semibold">Strength</h3>
-        </div>
-
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <h3 class="text-xl font-semibold">Energy</h3>
-        </div>
-
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <h3 class="text-xl font-semibold">Discipline</h3>
-        </div>
-
-        <div class="rounded-[2rem] border border-ink/8 bg-paper p-6">
-          <h3 class="text-xl font-semibold">Longevity</h3>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- NEWSLETTER -->
-
-  <section id="newsletter" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-    <div class="grid gap-8 rounded-[2rem] border border-ink/8 bg-ink p-8 text-white shadow-soft lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
-
-      <div>
-
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Newsletter</p>
-
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          Join the Built to Last Briefing
-        </h2>
-
-        <p class="mt-4 max-w-xl text-base leading-7 text-white/75">
-          Weekly systems for strength, energy, leadership, and longevity.
-        </p>
-
-      </div>
-
-
-      <div class="rounded-[1.5rem] bg-white p-6 text-ink md:p-8">
-
-        <form class="mt-6 grid gap-4 sm:grid-cols-[1fr_auto]" action="https://example.com/subscribe" method="POST">
-
-          <input
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            class="w-full rounded-full border border-ink/10 bg-white px-5 py-3 outline-none"
-            required
-          />
-
-          <button
-            type="submit"
-            class="rounded-full bg-atlas px-6 py-3 text-sm font-medium text-white hover:bg-atlasDark transition"
-          >
-            Subscribe
-          </button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COMMUNITY -->
-
-  <section id="community" class="border-y border-black/5 bg-white">
-
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-      <div class="max-w-3xl">
-
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-smoke">Community</p>
-
-        <h2 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-          The Built to Last Society
-        </h2>
-
-        <p class="mt-5 text-lg leading-8 text-slate">
-          A future community layer for leaders implementing the Built to Last OS together.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
 
   <footer class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-
-    <div class="flex flex-col gap-4 border-t border-black/5 pt-8 md:flex-row md:items-center md:justify-between">
-
+    <div class="flex flex-col gap-4 border-t border-black/5 pt-8 md:flex-row md:items-start md:justify-between">
       <div>
-
         <p class="text-sm font-semibold uppercase tracking-[0.25em] text-smoke">Built to Last</p>
-
-        <p class="mt-2 text-sm text-slate">
-          The operating system for high-performing men playing the 10-year game.
+        <p class="mt-2 max-w-md text-sm text-slate">
+          Executive health for leaders playing the 10-year game. Watch on YouTube, subscribe on Substack, and route to the right next step.
         </p>
-
       </div>
-
+      <div class="flex flex-wrap gap-6 text-sm text-slate">
+        <a href="https://www.youtube.com/@TheBuiltToLastPod" target="_blank" rel="noopener noreferrer" class="transition hover:text-atlas">YouTube</a>
+        <a href="https://builttolastpodcast.substack.com/" target="_blank" rel="noopener noreferrer" class="transition hover:text-atlas">Substack</a>
+        <a href="https://www.fit4liferx.com/" target="_blank" rel="noopener noreferrer" class="transition hover:text-atlas">Chris</a>
+        <a href="https://stan.store/markholzum" target="_blank" rel="noopener noreferrer" class="transition hover:text-atlas">Mark</a>
+      </div>
     </div>
-
   </footer>
-
 </body>
 </html>
